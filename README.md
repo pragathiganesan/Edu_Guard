@@ -1,38 +1,90 @@
-Frontend Environment Setup
+🎓 Edu_Guard
 
-Development Environment
+🤖 AI-Powered Student Dropout Prediction & Counseling System
 
-- IDE: Visual Studio Code
-- Programming Language: HTML5, CSS3
-- Framework: Flask Template Engine
-- Browser: Google Chrome
-- Version Control: GitHub
+«"Predict Early, Support Better, Empower Every Student." 🌟»
 
-Project Structure
+📌 Project Description
+
+Edu_Guard is an intelligent web-based system designed to identify students who may be at risk of dropping out and provide timely counseling recommendations. By analyzing academic performance, attendance, and engagement levels, the system helps institutions take proactive measures to improve student success and retention.
+
+🎯 Project Goals
+
+✅ Detect potential dropout risks early
+✅ Support students through personalized recommendations
+✅ Help educators monitor student performance
+✅ Improve overall student retention rates
+
+🚀 Key Features
+
+🔐 Student Login System
+📊 Student Performance Analysis
+⚠️ Dropout Risk Prediction
+💡 Counseling Recommendations
+🌐 Simple and User-Friendly Interface
+
+🛠️ Technology Stack
+
+🎨 Frontend
+
+- HTML5
+- CSS3
+
+⚙️ Backend
+
+- Python
+- Flask
+
+🔧 Development Tools
+
+- Visual Studio Code
+- GitHub
+
+📂 Project Structure
 
 Edu_Guard/
 ├── app.py
 ├── templates/
 │   ├── login.html
-│   └── predict.html
+│   ├── predict.html
+│   └── result.html
 ├── static/
 └── README.md
 
-Setup Steps
+▶️ How to Run
 
-1. Install Python.
-2. Install Visual Studio Code.
-3. Install Flask using:
-   pip install flask
-4. Create templates and static folders.
-5. Develop login.html and predict.html pages.
-6. Run the application using:
-   python app.py
-7. Access the application at:
-   http://127.0.0.1:5000
+1️⃣ Install Python
 
-Frontend Features
+2️⃣ Install Flask
 
-- Student Login Page
-- Student Prediction Form
-- Responsive Web Interface
+pip install flask
+
+3️⃣ Run the application
+
+python app.py
+
+4️⃣ Open in browser
+
+http://127.0.0.1:5000
+
+📈 Expected Output
+
+🟢 Low Risk of Dropout
+➡️ Continue Monitoring
+
+🔴 High Risk of Dropout
+➡️ Counseling Required Immediately
+
+🔮 Future Enhancements
+
+🤖 Machine Learning Integration
+🗄️ SQLite/MySQL Database
+📊 Admin Dashboard
+📧 Email Notifications
+📱 Mobile-Friendly Interface
+
+👩‍💻 Developed By
+
+Pragathi G
+
+🌱 Learning • Building • Innovating
