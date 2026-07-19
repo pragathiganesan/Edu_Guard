@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edu Guard - Student Form</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f4ff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .topbar {
+            background: #1a237e;
+            color: white;
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .topbar h2 { font-size: 18px; }
+        .topbar span { font-size: 13px; opacity: 0.8; }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #1a237e;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        .field {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 6px;
+        }
+
+        .hint {
+            font-size: 11px;
+            color: #aaa;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        input[type="number"]:focus {
+            border-color: #1a237e;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #f0f0f0;
+            margin: 28px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #1a237e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover { background: #0d47a1; }
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+    <h2>🎓 Edu Guard Dashboard</h2>
+    <span>Student Risk Assessment</span>
+</div>
+
+<div class="card">
+    <h3>Enter Student Details</h3>
+    <p>Fill in the student's academic data to predict dropout risk.</p>
+
+    <form action="/predict" method="post">
+
+        <div class="field">
+            <label>Attendance (%)</label>
+            <div class="hint">Enter percentage (0–100). Below 75% is considered at risk.</div>
+            <input type="number" name="attendance" min="0" max="100" placeholder="e.g. 80" required>
+        </div>
+
+        <div class="field">
+            <label>Marks (%)</label>
+            <div class="hint">Enter percentage (0–100). Below 50% is considered at risk.</div>
+            <input type="number" name="marks" min="0" max="100" placeholder="e.g. 65" required>
+        </div>
+
+        <div class="field">
+            <label>Engagement Score</label>
+            <div class="hint">Enter score (0–100). Below 50 is considered at risk.</div>
+            <input type="number" name="engagement" min="0" max="100" placeholder="e.g. 70" required>
+        </div>
+
+        <hr class="divider">
+
+        <button type="submit">Predict Dropout Risk →</button>
+    </form>
+</div>
+
+</body>
+</html>
